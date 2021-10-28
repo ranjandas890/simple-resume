@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600px;
+}
+
+/* STYLING OF BODY  */
+
+
+body{
+    background-color:lightblue;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+
+}
+/* STYLING OF CONTAINER THE PARENT CONTAINER  */
+
+
+.container{
+    width:100%;
+    max-width:1000px;
+    min-height:1000px;
+    margin:50px;
+    background-color:whitesmoke;
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow:0px 35px 55px rgba(0,0,0,1);
+}
+
+/* STYLING THE LEFT PART OF CONTAINER  */
+
+
+.container .left-side{
+    position:relative;
+    background-color:#003147;
+    padding:40px;
+}
+.profile{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom:20px;
+    border-bottom:1px solid grey
+}
+/* profile image styling  */
+
+.profile .profileimg{
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+
+}
+
+.profile .profileimg img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+}
+
+/* profile heading styling  */
+
+
+.profile h2{
+    color:whitesmoke;
+    font-size:25px;
+    margin-top:20px;
+    text-transform:uppercase;
+    text-align: center;
+    line-height:25px;
+    font-weight:600;
+}
+.profile h2 span{
+    font-size:20px;
+    font-weight:300;
+   
+}
+
+/* contact section styling  */
+.contact{
+    padding-top:40px;
+}
+.title{
+    color:whitesmoke;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+
+
+}
+
+/* styling of contact ul and li  */
+
+.contact ul{
+    position:relative;
+}
+
+.contact ul li{
+    list-style-type: none;
+    position:relative;
+    margin:10px 0;
+    cursor:pointer;
+
+
+}
+/* styling icons  */
+.contact ul li .icon{
+    display: inline-block;
+    width:20px;
+    font-size:16px;
+    color:turquoise;
+}
+
+.contact ul li span{
+    color:whitesmoke;
+    font-weight:300;
+}
+
+/* education section stling  */
+
+.contact.education li{
+    margin-bottom:15px;
+
+}
+.contact.education h5{
+    color:turquoise;
+    font-weight:600;
+}
+.contact.education h4:nth :nth-child(2){
+    color:whitesmoke;
+    font-weight:500;
+
+}
+.contact.education h4{
+    color:whitesmoke;
+    font-weight:200;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* STYLING THE RIGHT SIDE OF CONTAINER  */
+
+
+.container .right-side{
+    position:relative;
+    background-color:whitesmoke;
+    padding:40px;
+}
+
+
+.about{
+    margin-bottom:20px;
+}
+.about:last-child{
+    margin-bottom:0;
+}
+
+.title2{
+    color:#003147;;
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+p{
+    color:#003147;
+}
+.about.box{
+    display:flex;
+    flex-direction:row;
+    margin:20px 0;
+}
+.about .box .text{
+    text-transform:capitalize;
+    color:steelblue;
+    font-size:18px;
+
+
+}
+
+
+.skill .box{
+    position:relative;
+    width:100%;
+    display:grid;  
+    grid-template-columns: 150px 1fr;
+    justify-content: center; 
+    align-items: center; 
+}
+.skill .box h4{
+    color:steelblue;
+}
+
+.skill .box .percent{
+    position:relative;
+    width:100%;
+    height:10px;
+    background:whitesmoke;
+
+}
+.skill .box .percent div{
+    position:absolute;
+    top:0;
+    left: 0;
+    height:100%;
+    background: rgb(255, 157, 0);
+
+}
+
+
+.interest ul{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+
+
+}
+.interest ul li{
+    list-style: none;
+    color:#333;
+    margin:10px 0;
+    font-weight:500;
+}
+
+.interest ul li .fa{
+    color:#003147;
+    font-size:19px;
+    width:20px;
+}
+
+
+/* making responsive by using media query  */
+
+@media(max-width:1000px){
+    .container{
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+         grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:600px){
+
+}
+
+
